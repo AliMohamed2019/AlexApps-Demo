@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		812BA60324E58A1A0038B7A9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BA60124E58A1A0038B7A9 /* Service.swift */; };
+		812BA60424E58A1A0038B7A9 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BA60224E58A1A0038B7A9 /* Movies.swift */; };
+		81DE9ED524E5900900F40367 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DE9ED424E5900900F40367 /* TableViewCell.swift */; };
+		81DE9ED724E5941900F40367 /* MovieViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DE9ED624E5941900F40367 /* MovieViewModal.swift */; };
+		81DE9ED924E5A62F00F40367 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DE9ED824E5A62F00F40367 /* Extension.swift */; };
+		81DE9EDB24E5A7B900F40367 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DE9EDA24E5A7B900F40367 /* DetailsViewController.swift */; };
+		81DE9EDD24E63AF800F40367 /* MoviesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DE9EDC24E63AF800F40367 /* MoviesCellViewModel.swift */; };
 		81E3987424E440710053C01E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3987324E440710053C01E /* AppDelegate.swift */; };
 		81E3987624E440710053C01E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3987524E440710053C01E /* SceneDelegate.swift */; };
 		81E3987824E440710053C01E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E3987724E440710053C01E /* ViewController.swift */; };
@@ -16,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		812BA60124E58A1A0038B7A9 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		812BA60224E58A1A0038B7A9 /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		81DE9ED424E5900900F40367 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		81DE9ED624E5941900F40367 /* MovieViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModal.swift; sourceTree = "<group>"; };
+		81DE9ED824E5A62F00F40367 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		81DE9EDA24E5A7B900F40367 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		81DE9EDC24E63AF800F40367 /* MoviesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCellViewModel.swift; sourceTree = "<group>"; };
 		81E3987024E440710053C01E /* AlexApps Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AlexApps Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E3987324E440710053C01E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81E3987524E440710053C01E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +51,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		812BA60024E58A1A0038B7A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				812BA60224E58A1A0038B7A9 /* Movies.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		812BA60524E58A230038B7A9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				812BA60124E58A1A0038B7A9 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		812BA60624E58A450038B7A9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				81DE9ED624E5941900F40367 /* MovieViewModal.swift */,
+				81DE9EDC24E63AF800F40367 /* MoviesCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		812BA60724E58A4F0038B7A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				81E3987724E440710053C01E /* ViewController.swift */,
+				81DE9EDA24E5A7B900F40367 /* DetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		812BA60824E58A550038B7A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81DE9ED424E5900900F40367 /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		81E3986724E440710053C01E = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +112,14 @@
 		81E3987224E440710053C01E /* AlexApps Demo */ = {
 			isa = PBXGroup;
 			children = (
+				812BA60024E58A1A0038B7A9 /* Model */,
+				812BA60824E58A550038B7A9 /* View */,
+				812BA60624E58A450038B7A9 /* ViewModel */,
+				812BA60724E58A4F0038B7A9 /* Controller */,
+				812BA60524E58A230038B7A9 /* Service */,
+				81DE9ED824E5A62F00F40367 /* Extension.swift */,
 				81E3987324E440710053C01E /* AppDelegate.swift */,
 				81E3987524E440710053C01E /* SceneDelegate.swift */,
-				81E3987724E440710053C01E /* ViewController.swift */,
 				81E3987924E440710053C01E /* Main.storyboard */,
 				81E3987C24E440730053C01E /* Assets.xcassets */,
 				81E3987E24E440730053C01E /* LaunchScreen.storyboard */,
@@ -138,9 +199,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812BA60424E58A1A0038B7A9 /* Movies.swift in Sources */,
+				81DE9ED724E5941900F40367 /* MovieViewModal.swift in Sources */,
+				81DE9EDB24E5A7B900F40367 /* DetailsViewController.swift in Sources */,
+				81DE9EDD24E63AF800F40367 /* MoviesCellViewModel.swift in Sources */,
 				81E3987824E440710053C01E /* ViewController.swift in Sources */,
+				812BA60324E58A1A0038B7A9 /* Service.swift in Sources */,
+				81DE9ED524E5900900F40367 /* TableViewCell.swift in Sources */,
 				81E3987424E440710053C01E /* AppDelegate.swift in Sources */,
 				81E3987624E440710053C01E /* SceneDelegate.swift in Sources */,
+				81DE9ED924E5A62F00F40367 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +355,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GPMFK5M647;
 				INFOPLIST_FILE = "AlexApps Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +374,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GPMFK5M647;
 				INFOPLIST_FILE = "AlexApps Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
